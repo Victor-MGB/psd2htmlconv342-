@@ -32,6 +32,9 @@ nav a {
 
 .Home_image {
     box-sizing: content-box;
+    height: auto;
+    max-width: 100%;
+    
 }
 
 footer {
