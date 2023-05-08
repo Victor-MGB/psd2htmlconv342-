@@ -1,0 +1,254 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+div.main_container,
+div.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header style */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px -20px 0px;
+}
+
+header>p {
+    font-size: 70px;
+    color: gray;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0px 53px 0px 0px;
+    margin: 20px;
+}
+
+header>span {
+    color: rgb(12, 60, 127);
+    position: relative;
+    left: -80px;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header>div[id] {
+    margin: 10px 0px 0px 5px;
+    position: relative;
+    top: -20px;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgb(12, 60, 127);
+    margin: 0px 0px 28px 0px;
+    padding: 17px;
+}
+
+nav>ul {
+    display: flex;
+    position: relative;
+    right: -5cm;
+    margin: 0px 0px 0px 0px;
+}
+
+nav>ul>li {
+    margin: 0px 0px 0px 10px;
+    list-style: none;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+a:active {
+    background-color: gray;
+    text-transform: lowercase;
+    color: black;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: gray;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* schedule styles */
+div.schedule_list {
+    background-color: whitesmoke;
+    box-sizing: content-box;
+    padding: 10px;
+    width: max-content;
+    position: absolute;
+    top: 28%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    ;
+    -o-transform: translate(-50%, -50%);
+}
+
+div.schedule_list>ul {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: center;
+}
+
+div.schedule_list>ul>li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+div.schedule_list>ul>li>div {
+    text-align: center;
+    padding: 2px;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+
+/* footer style */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(12, 60, 127);
+    position: relative;
+    margin-top: auto;
+}
+
+#avater {
+    clip-path: circle(50%);
+}
+
+footer>ul {
+    display: flex;
+}
+
+li {
+    margin: 15px 10px 0px 0px;
+    text-align: center;
+    list-style: none;
+}
+
+.image_holder {
+    padding-bottom: 60%;
+    /* to maintain aspect ratio */
+    position: relative;
+}
+
+.image_holder img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+}
+
+
+/* Responsive styles */
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    .main_container {
+        width: fit-content;
+        padding: 1px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+
+    header {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    nav ul {
+        display: contents;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .image_holder {
+        margin-top: 20px;
+    }
+
+    .schedule_list {
+        text-align: center;
+    }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .main_container {
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        display: contents;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .image_holder {
+        margin-top: 30px;
+    }
+
+    .schedule_list {
+        text-align: center;
+    }
+}
